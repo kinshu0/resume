@@ -128,19 +128,19 @@
 %---------- HEADING ----------
 
 \begin{center}
-    \textbf{\Huge \scshape Kinshu Gupta} \\ \vspace{3pt}
+    \textbf{\huge \scshape Kinshu Gupta} \\ \vspace{3pt}
     \small
     \hspace{.5pt} \href{mailto:kinshu.gupta@quinnipiac.edu}{\color{blue}kinshu.gupta@quinnipiac.edu}
     $|$
-    \hspace{.5pt} \href{tel:8609959086}{\color{blue}860-995-9086}
+    \hspace{.5pt} \href{tel:18609959086}{\color{blue}1-860-995-9086}
     $|$
     \hspace{.5pt} \href{https://www.linkedin.com/in/kinshu-gupta}{\color{blue}linkedin.com/in/kinshu-gupta}
     $|$
     \hspace{.5pt} \href{https://github.com/kinshu0}{\color{blue}github.com/kinshu0}
     $|$
     \hspace{.5pt} \href{https://kinshu0.github.io}{\color{blue}kinshu0.github.io}
+    \vspace{-5pt}
 \end{center}
-
 
 
 % % %----------- EDUCATION -----------
@@ -150,7 +150,7 @@
   \resumeSubHeadingListStart
     
     \resumeEducationHeading
-      {Quinnipiac University}{Hamden\, Connecticut}
+      {Quinnipiac University}{Hamden, Connecticut}
       {Majors: Computer Science, Data Science; Minor: Finance (CGPA: 3.99)}{Aug 2021 -- May 2025 (Expected)}
 
   \resumeSubHeadingListEnd
@@ -167,20 +167,23 @@
       {International Game Technology}{Providence, Rhode Island}
       {Software Architecture Intern}{Jun 2023 -- Present}
         \resumeItemListStart
-            \resumeItem{Built casino floor game session data generator PoC utilizing multithreading to simulate 10,000+ Electronic Gaming Machine (EGM) clients to test Transaction Processor (TXP)}
-            \resumeItem{Compared TXP solutions including native cloud functions, Kubernetes cluster, Kafka nodes, and RabbitMQ exchanges to handle 10,000+ requests per minute}
-            \resumeItem{Developed + deployed scalable TXP PoC cloud function to handle unstructured player session data from EGMs, store on DocumentDB, and provide intelligent offering feedback to maximize player engagement and retention}
-            \resumeItem{Performed integration testing for EGM simulator, TXP, DB, and AWS SageMaker training \& prediction endpoint}
+            \resumeItem{Built casino floor game session data generator PoC with multithreading to simulate 50,000+ Electronic Gaming Machines (EGMs) for casino floors}
+            % \resumeItem{Developed + deployed scalable TXP PoC cloud function to handle unstructured player session data from EGMs, store on DocumentDB, and provide intelligent offering feedback to maximize player engagement and retention}
+            \resumeItem{Developed real-time casino transaction processor utilizing Drools rule engine for complex event processing of player session data from EGMs and provide intelligent offering feedback to maximize player engagement and retention}
+            \resumeItem{Stress tested by monitoring CPU load and memory of TXP hosted on EC2 instance by running upto 50,000 concurrent EGM sessions with player session data subscribed from RabbitMQ}
+            % \resumeItem{Compared TXP solutions including native cloud functions, Kubernetes cluster, Kafka nodes, and RabbitMQ exchanges to handle 10,000+ requests per minute}
+            \resumeItem{Performed integration testing for EGM simulator, TXP, database, and AWS SageMaker machine learning endpoint}
             \resumeItem{Identified critical issues while documenting Airflow ingestion tasks that processes unstructured player session data for use in Snowflake data warehouse}
         \resumeItemListEnd
 
     \resumeSubheading
-      {QU Academic Innovation \& Effectiveness}{Hamden, Connecticut}
+      {QU Office of Academic Innovation \& Effectiveness}{Hamden, Connecticut}
       {Research Assistant}{Sep 2022 -- May 2023}
         \resumeItemListStart
+            \resumeItem{Co-author of longitudinal cohort study analyzing and building predictive model revealing impact of student psychoeducational variables on quantitative literacy and written communication scores (in progress)}
             \resumeItem{Consolidated multi-decade, cross-university longitudinal study data from 25,000+ students using NumPy, Pandas, TensorFlow and Sentence Transformer models for Natural Language Processing}
             \resumeItem{Accelerated data cleaning pipeline by automation using Python and Selenium, achieving 30x faster processing; slashed 300 annual work hours to under 10}
-            \resumeItem{Constructed psychoeducational predictive model, revealing impact on critical thinking \& written communication}
+            % \resumeItem{Constructed psychoeducational predictive model, revealing impact on critical thinking \& written communication}
         \resumeItemListEnd
 
     % \vspace{15pt}
@@ -204,9 +207,9 @@
           \resumeItemListEnd
       
       \resumeProjectHeading
-        {\textbf{Democracy Front} $|$ \emph{Developer}}{}
+        {\textbf{Democracy Front} $|$ \emph{Co-Founder}}{}
           \resumeItemListStart
-            \resumeItem{Co-founded political fundraising app to successfully qualify for 2nd round pitch to Pear Venture Capital at Harvard delivering legislature info + enabling grassroots donor contributions to candidates, political parties, PACs or NGOs}
+            \resumeItem{Developed political fundraising app to successfully qualify for 2nd round pitch to Pear Venture Capital at Harvard delivering legislature info + enabling grassroots donor contributions to candidates, political parties, PACs or NGOs}
           \resumeItemListEnd
       
       \resumeProjectHeading
@@ -217,7 +220,7 @@
           \resumeItemListEnd
       
       \resumeProjectHeading
-        {\textbf{Cucumber Sports} $|$ \emph{\href{https://github.com/arasgungore/netlist-solver}{\color{blue}GitHub}}}{}
+        {\textbf{Cucumber Sports} $|$ \emph{App Developer}}{}
           \resumeItemListStart
             \resumeItem{Developed and organized sports organization platform for runners to schedule, host, register, and compete at racing events; used to organize Rocky Hill race with local students}
             \resumeItem{Built using Django / Python, deployed on Google Cloud Platform App Engine, utilizing AWS Simple Email Service, Cloud SQL, Cloud Bucket; Used experience to obtain AWS Developer Associate certification}
@@ -230,7 +233,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-      {\textbf{Amazon Alexa Hackathon} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}Lead Programmer}}}{}
+      {\textbf{Amazon Alexa Hackathon} $|$ \emph{Participant}}{}
         \resumeItemListStart
           \resumeItem{Won prize for successfully building \& deploying voice assistant app to quiz and review STEM topics, utilized Node.js, AWS services, and passed Alexa store launch requirements}
 
@@ -242,13 +245,23 @@
 
 %----------- SKILLS -----------
 
+% \section{Skills}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{Programming: }{Python, Java, JavaScript, C, R, SQL} \\ \vspace{3pt}
+        
+%         % \textbf{Technologies: }{Arduino, Raspberry Pi, Git, Selenium, React, TensorFlow Machine Learning Certified, AWS Developer Associate Certified} \\ \vspace{3pt}
+        
+%     }}
+%   \resumeSubHeadingListEnd
 \section{Skills}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming:}{Python, Java, C/C++, JavaScript, R, SQL} \\ \vspace{3pt}
-        
-        \textbf{Technologies:}{Arduino, Raspberry Pi, Git, Selenium, React, TensorFlow Machine Learning Certified, AWS Developer Associate Certified} \\ \vspace{3pt}
+        \textbf{Programming }{Python, Java, JavaScript, C, R, SQL} \\
+        \textbf{Technologies }{Arduino, Raspberry Pi, Git, Selenium, React} \\ 
+        \textbf{Certifications }TensorFlow Machine Learning, AWS Developer Associate\vspace{3pt}
         
     }}
   \resumeSubHeadingListEnd
