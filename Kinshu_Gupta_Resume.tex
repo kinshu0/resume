@@ -1,0 +1,341 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+% \newcommand{\resumeEducationHeading}[6]{
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      % \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Kinshu Gupta} \\ \vspace{3pt}
+    \small
+    \hspace{.5pt} \href{mailto:kinshu.gupta@quinnipiac.edu}{\color{blue}kinshu.gupta@quinnipiac.edu}
+    $|$
+    \hspace{.5pt} \href{tel:8609959086}{\color{blue}860-995-9086}
+    $|$
+    \hspace{.5pt} \href{https://www.linkedin.com/in/kinshu-gupta}{\color{blue}linkedin.com/in/kinshu-gupta}
+    $|$
+    \hspace{.5pt} \href{https://github.com/kinshu0}{\color{blue}github.com/kinshu0}
+    $|$
+    \hspace{.5pt} \href{https://kinshu0.github.io}{\color{blue}kinshu0.github.io}
+\end{center}
+
+
+
+% % %----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Quinnipiac University}{Hamden\, Connecticut}
+      {Majors: Computer Science, Data Science; Minor: Finance (CGPA: 3.99)}{Aug 2021 -- May 2025 (Expected)}
+
+  \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {International Game Technology}{Providence, Rhode Island}
+      {Software Architecture Intern}{Jun 2023 -- Present}
+        \resumeItemListStart
+            \resumeItem{Built casino floor game session data generator PoC utilizing multithreading to simulate 10,000+ Electronic Gaming Machine (EGM) clients to test Transaction Processor (TXP)}
+            \resumeItem{Compared TXP solutions including native cloud functions, Kubernetes cluster, Kafka nodes, and RabbitMQ exchanges to handle 10,000+ requests per minute}
+            \resumeItem{Developed + deployed scalable TXP PoC cloud function to handle unstructured player session data from EGMs, store on DocumentDB, and provide intelligent offering feedback to maximize player engagement and retention}
+            \resumeItem{Performed integration testing for EGM simulator, TXP, DB, and AWS SageMaker training \& prediction endpoint}
+            \resumeItem{Identified critical issues while documenting Airflow ingestion tasks that processes unstructured player session data for use in Snowflake data warehouse}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {QU Academic Innovation \& Effectiveness}{Hamden, Connecticut}
+      {Research Assistant}{Sep 2022 -- May 2023}
+        \resumeItemListStart
+            \resumeItem{Consolidated multi-decade, cross-university longitudinal study data from 25,000+ students using NumPy, Pandas, TensorFlow and Sentence Transformer models for Natural Language Processing}
+            \resumeItem{Accelerated data cleaning pipeline by automation using Python and Selenium, achieving 30x faster processing; slashed 300 annual work hours to under 10}
+            \resumeItem{Constructed psychoeducational predictive model, revealing impact on critical thinking \& written communication}
+        \resumeItemListEnd
+
+    % \vspace{15pt}
+    
+\resumeSubHeadingListEnd
+
+
+
+
+%----------- EXTRACURRICULARS & PROJECTS -----------
+
+\section{Extracurriculars \& Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+        {\textbf{Quinnipiac Computing Club} $|$ \emph{President}}{}
+          \resumeItemListStart
+            \resumeItem{Led and organized 2022 hackathon, securing M\&T Bank sponsorship \& managing a 50+ member club budget}
+            \resumeItem{Won first-place 2021 Hackathon team prize as general member by building Python, React.js web app to visually plan nutrition intake, utilizing publicly available data and guidelines set by the World Health Organization}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Democracy Front} $|$ \emph{Developer}}{}
+          \resumeItemListStart
+            \resumeItem{Co-founded political fundraising app to successfully qualify for 2nd round pitch to Pear Venture Capital at Harvard delivering legislature info + enabling grassroots donor contributions to candidates, political parties, PACs or NGOs}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Stock Network Analysis} $|$ \emph{\href{https://stock-network-analysis.herokuapp.com}{\color{blue}stock-network-analysis.herokuapp.com}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed tool to diversify investment portfolios based on graph centrality measures}
+            \resumeItem{Visualized correlation graph in Fruchterman-Reingold layout by using Python, Plotly, and HTML/CSS, deployed using Heroku CI/CD}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Cucumber Sports} $|$ \emph{\href{https://github.com/arasgungore/netlist-solver}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed and organized sports organization platform for runners to schedule, host, register, and compete at racing events; used to organize Rocky Hill race with local students}
+            \resumeItem{Built using Django / Python, deployed on Google Cloud Platform App Engine, utilizing AWS Simple Email Service, Cloud SQL, Cloud Bucket; Used experience to obtain AWS Developer Associate certification}
+          \resumeItemListEnd
+      
+      \resumeProjectHeading
+        {\textbf{Rocky Hill High School Robotics Club} $|$ \emph{Lead Programmer}}{}
+          \resumeItemListStart
+            \resumeItem{Competed at Connecticut VEX Robotics Competition for a chance to qualify for New England championships}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+      {\textbf{Amazon Alexa Hackathon} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}Lead Programmer}}}{}
+        \resumeItemListStart
+          \resumeItem{Won prize for successfully building \& deploying voice assistant app to quiz and review STEM topics, utilized Node.js, AWS services, and passed Alexa store launch requirements}
+
+        \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming:}{Python, Java, C/C++, JavaScript, R, SQL} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{Arduino, Raspberry Pi, Git, Selenium, React, TensorFlow Machine Learning Certified, AWS Developer Associate Certified} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+
+% %----------- AWARDS & ACHIEVEMENTS -----------
+
+% \section{Awards \& Achievements}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500.} \\ \vspace{3pt}
+        
+%         \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK).} \\ \vspace{3pt}
+        
+%         \textbf{Boğaziçi University Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University.} \\ \vspace{3pt}
+        
+%         \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK).} \\ \vspace{3pt}
+        
+%         \textbf{Duolingo English Test (DET):}{ Overall Score: 135/160} \\ \vspace{3pt}
+        
+%         % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
+        
+%         \textbf{Kocaeli Science High School Salutatorian Award:}{ Graduated as the second-highest ranked student in my class.}
+%     }}
+%   \resumeSubHeadingListEnd
+
+
+
+
+% %----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{Major coursework:}{ Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering} \\ \vspace{3pt}
+        
+%         \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms}
+%     }}
+%   \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Swimming, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \resumeSubHeadingListStart
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
